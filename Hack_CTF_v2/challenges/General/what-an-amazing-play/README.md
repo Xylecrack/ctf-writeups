@@ -38,7 +38,7 @@ Inspect the script and notice several sections of code without "Speak your mind!
 
 #### Modified Script
 
-Here is the [updated script](files/Another_Great_CTF.txt):
+Here is the [updated script](files/Another_Great_CTF_modified.txt):
 
 ### Step 4: Execute the Modified Script
 

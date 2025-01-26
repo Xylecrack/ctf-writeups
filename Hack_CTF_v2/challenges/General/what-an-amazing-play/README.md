@@ -24,7 +24,7 @@ To execute the script, use an online interpreter for SPL. A suitable tool is [Es
 
 #### Initial Execution
 
-Run the provided file `Another_Great_CTF.txt`. The output from the first execution is:
+Run the provided file [Another Great CTF Script](files/Another_Great_CTF.txt). The output from the first execution is:
 
 ```
 hacks{
@@ -38,7 +38,7 @@ Inspect the script and notice several sections of code without "Speak your mind!
 
 #### Modified Script
 
-Here is the updated `Another_Great_CTF_modified.txt`:
+Here is the [updated script](files/Another_Great_CTF.txt):
 
 ### Step 4: Execute the Modified Script
 

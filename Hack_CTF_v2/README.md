@@ -1,8 +1,8 @@
-# lnmhacks
+# Hack_CTF_v2
 
 ## About
 
-[insert description here]
+**Hack_CTF_v2** was a 24-hour Capture the Flag competition held during **LNMHacks 7.0**, from **24th to 25th January 2025**.
 
 ## Challenges
 

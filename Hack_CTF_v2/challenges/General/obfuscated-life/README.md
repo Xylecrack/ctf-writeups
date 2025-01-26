@@ -27,5 +27,6 @@ function hi() {
 hi();
 ```
 ## Complete Flag
-
+```
 hacks{don't_be_a_obfuscated_nerd}
+```

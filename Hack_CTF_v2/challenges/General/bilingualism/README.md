@@ -23,12 +23,13 @@ I can speak two languages! How cool is that? But can you understand both of them
 
 3. **Interpret the Whitespace**:  
    - The JavaScript code outputs a sequence using these whitespace characters, which when decoded gives:
-     ```plaintext
-     hacks{	 	 
-	 
-
- 	}
-     ```
+	```plaintext
+	hacks{	 	 
+		 
+	
+	 	}
+	```
+![image](https://github.com/user-attachments/assets/d649d1c7-d647-452d-aa01-839934a4c4ef)
 
 4. **Replace the Variables**:  
    - Replaced the characters `i`, `j`, and `k` with their respective whitespace characters:

@@ -8,59 +8,44 @@ I was given this file. But it looks pretty weird to me!
 
 * [test.png](<files/test.png>)
 
-## Challenge Writeup: Decoding Image with Repeated Pixels
-
 ### Steps Followed:
 
 1. **Inspect the Image**:  
-   - Upon inspecting the image using **Aperisolve**, it was noticed that the blue channel had repeated pixels, which could be a clue to extracting the flag.
-
-2. **Extract the Blue Channel**:  
-   - The image was loaded and converted to the RGB mode using the **PIL** library:
+   - Opened the provided image `test.png` using the Python Imaging Library (PIL):
      ```python
      from PIL import Image
      import numpy as np
 
-     image_path = 'test.png'
+     image_path = 'test.png'  
      image = Image.open(image_path)
-     rgb_image = image.convert('RGB')
      ```
 
-3. **Isolate the Blue Channel**:  
-   - The blue channel of the image was extracted by accessing the third dimension (index 2) of the pixel array:
+2. **Extract the Blue Channel**:  
+   - Converted the image to RGB mode and extracted the blue channel values:
      ```python
+     rgb_image = image.convert('RGB')
      pixels = np.array(rgb_image)
      blue_pixels = pixels[:, :, 2]
      ```
 
-4. **Flatten the Array of Blue Pixels**:  
-   - The blue channel was flattened into a one-dimensional array:
+3. **Flatten the Blue Pixels**:  
+   - Flattened the blue channel pixels into a one-dimensional list for easier processing:
      ```python
      blue_pixels_flat = blue_pixels.flatten()
      ```
 
-5. **Find Unique Blue Pixels**:  
-   - Repeated pixels were removed by using a set to store unique blue pixel values:
+4. **Decode the Flag**:  
+   - Noticed that the pixel values were encoded using a simple Caesar cipher (shift of -13).
+   - Decoded the first 17 characters from the blue pixel values using this shift:
      ```python
-     seen = set()
-     unique_blue_pixels = []
-     for pixel in blue_pixels_flat:
-         if pixel not in seen:
-             seen.add(pixel)
-             unique_blue_pixels.append(pixel)
+     flag = [chr(blue_pixels_flat[i] - 13) for i in range(0, 17)]
      ```
 
-6. **Apply Caesar Cipher Decryption**:  
-   - A Caesar cipher with a shift of 13 (ROT13) was applied to decode the unique blue pixel values:
-     ```python
-     flag = [chr(unique_blue_pixels[i]-13) for i in range(len(unique_blue_pixels))]
-     ```
-
-7. **Print the Flag**:  
-   - The decoded flag was printed:
+5. **Output the Final Flag**:
+   - Joined the decoded characters and printed the flag:
      ```python
      print(''.join(flag))
      ```
 
 ### Final Flag:
-hacks{eASY_P4Sy}
+hacks{eAsY_Pe4Sy}

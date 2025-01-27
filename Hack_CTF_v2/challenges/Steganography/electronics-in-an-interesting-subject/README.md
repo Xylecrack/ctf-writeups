@@ -63,4 +63,4 @@ I was given this file. But it looks pretty weird to me!
      ```
 
 ### Final Flag:
-hacks{eAY_P4Sy}
+hacks{eASY_P4Sy}

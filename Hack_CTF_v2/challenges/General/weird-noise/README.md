@@ -46,5 +46,4 @@ The task was to decode an image embedded in a **wave file** (`flag.wav`) using *
    - The resulting image displayed the flag in **Base64** format. We extracted the Base64 string `aGFja3N7c3N0dl9yMGNrc30=` and decoded it to reveal the final flag.
 
 ### Flag:
-The final flag was revealed after decoding the Base64 string from the SSTV image.
 hacks{sstv_r0cks}

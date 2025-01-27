@@ -14,6 +14,9 @@ Please help me...
 
 ### Steps Followed:
 
+Add the image to cyberchef, and split color channels. blue.png has less size than the other two, so it has been altered.
+![image](https://github.com/user-attachments/assets/2e7932b4-0d0c-4f58-9701-20fe1b8f3f74)
+
 1. Load the provided image `rgb.png` using the Python Imaging Library (PIL):
    ```python
    from PIL import Image

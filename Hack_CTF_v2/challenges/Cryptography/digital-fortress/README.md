@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/59884869-88d6-44be-bbbe-191cd81b48ef)# Digital Fortress
+# Digital Fortress
 
 ## Description
 
